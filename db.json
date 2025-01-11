@@ -1,0 +1,97 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "name": "Gabriel",
+      "email": "gabrielmxn22@gmail.com",
+      "password": "123456",
+      "phone": "21973727965",
+      "create_at": "data"
+    },
+    {
+      "id": "01e9",
+      "name": "Gabriel Da Silva Alves",
+      "email": "gb@academia.rog.br",
+      "password": "12345",
+      "phone": "21973727965",
+      "create_at": "Fri Jan 10 2025 23:36:12 GMT-0300 (Hora padrão de Brasília)"
+    },
+    {
+      "id": "2479",
+      "name": "Gabriel Da Silva Alves",
+      "email": "gb@academia.rog.br",
+      "password": "12345",
+      "phone": "21973727965",
+      "create_at": "Fri Jan 10 2025 23:36:26 GMT-0300 (Hora padrão de Brasília)"
+    },
+    {
+      "id": "1094",
+      "name": "Gabriel Da Silva Alves",
+      "email": "gb@academia.rog.br",
+      "password": "dawdwa",
+      "phone": "21973727965",
+      "create_at": "Fri Jan 10 2025 23:40:02 GMT-0300 (Hora padrão de Brasília)"
+    }
+  ],
+  "address": [
+    {
+      "id": "1",
+      "userId": "5",
+      "street": "Example Street",
+      "number": "123",
+      "complement": "Apt 101",
+      "neighborhood": "Downtown",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "10001",
+      "created_at": "2025-01-10T12:00:00Z"
+    },
+    {
+      "id": "e861",
+      "street": "Rua Ibicuí",
+      "number": "130",
+      "complement": "Funbdos",
+      "neighborhood": "Penha Circular",
+      "city": "Rio de Janeiro",
+      "state": "Rio de Janeiro",
+      "cep": "21215240",
+      "userId": "1094"
+    },
+    {
+      "id": "d543",
+      "created_at": "2025-01-11T19:09:44.746Z",
+      "userId": "1",
+      "cep": "21215240",
+      "state": "Rio de Janeiro",
+      "city": "Rio de Janeiro",
+      "neighborhood": "Penha Circular",
+      "complement": "Fundos",
+      "number": "130",
+      "street": "Rua Ibicuí"
+    },
+    {
+      "id": "4cac",
+      "created_at": "2025-01-11T19:19:46.914Z",
+      "userId": "1",
+      "cep": "21021270",
+      "state": "Rio de Janeiro",
+      "city": "Rio de Janeiro",
+      "neighborhood": "Olaria",
+      "complement": "Casa",
+      "number": "218",
+      "street": "Rua Bariri"
+    },
+    {
+      "id": "5c56",
+      "created_at": "2025-01-11T19:29:50.309Z",
+      "userId": "1",
+      "cep": "21012200",
+      "state": "Rio de Janeiro",
+      "city": "Rio de Janeiro",
+      "neighborhood": "Brás de Pina",
+      "complement": "Fundos",
+      "number": "706",
+      "street": "Rua Jorge Coelho"
+    }
+  ]
+}
