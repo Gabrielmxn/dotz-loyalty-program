@@ -14,20 +14,9 @@ interface DialogFormProps extends DialogFormPropsSchema {
 
 
 export function DialogForm(props: DialogFormProps) {
-  const { children, handleSubmit, register, setValue, reset, handleAddAddress, errors } = props
+  const { children, handleSubmit, register, setValue, reset, handleAddAddress, errors, handleViaCep } = props
   console.log(errors)
-  async function handleViaCep(event: ChangeEvent<HTMLInputElement>) {
-    console.log(event.currentTarget.value)
-    if (event.currentTarget.value.length === 8) {
-      const response = await viaCep(event.currentTarget.value)
-      setValue('street', response.logradouro)
-      setValue('neighborhood', response.bairro)
-      setValue('city', response.localidade)
-      setValue('state', response.estado)
-    }
 
-
-  }
   return (
     <Dialog.Root>
       <Dialog.Trigger asChild>
@@ -80,7 +69,7 @@ export function DialogForm(props: DialogFormProps) {
                 {...register('state')}
               />
             </FormRowOne>
-            <Button type="submit">Save changes</Button>
+            <Button type="submit">Salvar</Button>
           </DialogFormContainer>
 
 

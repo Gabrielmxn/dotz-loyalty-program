@@ -17,7 +17,7 @@ export const AddressList = styled.p`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   gap: 0.5rem;
 `
 

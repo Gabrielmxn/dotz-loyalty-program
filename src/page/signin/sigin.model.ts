@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form"
 import { SignInSchema, SignInSchemaType } from "./signin.schema"
 import { api } from "../../lib/axios"
 import { useNavigate } from 'react-router';
+import { toast } from 'sonner';
 
 export const useSignInModel = () => {
   const navigate = useNavigate()
@@ -16,11 +17,10 @@ export const useSignInModel = () => {
 
   async function handleAuthenticateUser(data: SignInSchemaType){
     const {email, password} = data
+  
+    const response = await api.get(`user?email=${email}&password=${password}`)
     const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
     await delay(2000);
-    const response = await api.get(`user?email=${email}&password=${password}`)
-    
-
     if(response.data.length > 0){
       localStorage.setItem("userId", response.data[0].id)
       console.log(response.data)
