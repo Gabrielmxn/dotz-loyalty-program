@@ -3,7 +3,6 @@ import { SignUpContainer, SignUpContainerForm, SignUpForm, SignUpImg } from "../
 import logo from '../../assets/logo.png'
 import { Button } from "../../components/button/button";
 import { useSignInModel } from "./sigin.model";
-import { Link } from "react-router";
 import { NavigateButton } from "./sigin.styles";
 
 type SignInViewProps = ReturnType<typeof useSignInModel>
@@ -20,7 +19,8 @@ export function SignInView(props: SignInViewProps) {
             type="submit"
             disabled={isSubmitting}
           >Enviar</Button>
-          <div><span>Você não possue uma conta?</span>
+          <div>
+            <span>Você não possue uma conta?</span>
             <NavigateButton to={'/signup'}>
               Crie aqui
             </NavigateButton>

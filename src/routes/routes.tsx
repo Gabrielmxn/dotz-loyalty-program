@@ -1,7 +1,5 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router";
-import { HomeView } from "../page/home/home.view";
 import { SignUpPage } from "../page/signup/signup.page";
-import { SignInView } from "../page/signin/signin.view";
 import { SignInPage } from "../page/signin/signin.page";
 import { HomePage } from "../page/home/home.page";
 import { AddressPage } from "../page/address/address.page";

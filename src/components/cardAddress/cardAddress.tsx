@@ -1,4 +1,4 @@
-import { Pencil, Star, Trash } from "@phosphor-icons/react";
+import { Pencil, Trash } from "@phosphor-icons/react";
 import { AddressDescription, CardAddressContainer, CardAddressHeader, Heading } from "./cardAddress.styles";
 import { colors } from "../../theme/colors";
 import { api } from "../../lib/axios";

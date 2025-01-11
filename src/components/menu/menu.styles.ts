@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Button } from "../button/button";
-import { Link } from "react-router";
 
 export const MenuContainer = styled.div`
   position: absolute;

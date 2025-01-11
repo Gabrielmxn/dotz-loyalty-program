@@ -1,10 +1,8 @@
-import { ClosedCaptioning } from "@phosphor-icons/react";
 import * as Dialog from "@radix-ui/react-dialog";
-import { ChangeEvent, FocusEvent, ReactNode } from "react";
+import { ReactNode } from "react";
 import { Content, DialogFormContainer, FormRowOne, Overlay } from "./dialog.styles";
 import { Input } from "../input/input";
 import { Button } from "../button/button";
-import { viaCep } from "../../services/viacep";
 import { useDialogModel } from "./dialog.model";
 
 type DialogFormPropsSchema = ReturnType<typeof useDialogModel>

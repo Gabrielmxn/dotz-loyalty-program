@@ -19,6 +19,7 @@ export const useSignInModel = () => {
     const {email, password} = data
   
     const response = await api.get(`user?email=${email}&password=${password}`)
+    toast.success("Você foi autenticado!")
     const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
     await delay(2000);
     if(response.data.length > 0){
