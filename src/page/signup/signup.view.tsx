@@ -17,8 +17,8 @@ export function SignUpView(props: SignUpViewProps) {
         <h2>Sign Up</h2>
         <SignUpForm onSubmit={handleSubmit(handleRegisterUser)}>
           <Input {...register('name')} label="Nome" placeholder="Informe seu nome" />
-          <Input {...register('email')} label="E-mail" placeholder="Informe seu e-mail" />
-          <Input {...register('password')} label="Senha" placeholder="Informe sua melhor senha" />
+          <Input {...register('email')} type="email" label="E-mail" placeholder="Informe seu e-mail" />
+          <Input {...register('password')} type="password" label="Senha" placeholder="Informe sua melhor senha" />
           <Input {...register('phone')} label="Telefone" placeholder="Informe seu telefone" />
           <Button type="submit">Enviar</Button>
 
