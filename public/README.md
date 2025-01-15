@@ -91,3 +91,16 @@ Para rodar a aplicação no modo de desenvolvimento com o servidor local:
 
 2. O Vite iniciará o servidor de desenvolvimento e o servidor JSON será executado para fornecer dados simulados.
 
+## Desenvolvimento
+
+Se você for fazer modificações no código, é recomendável usar o script `dev` para executar a aplicação em modo de desenvolvimento.
+
+Para verificar o código, use o script `lint` para garantir que o código segue os padrões definidos no ESLint.
+
+## Contribuição
+
+Sinta-se à vontade para enviar pull requests ou abrir issues para discutir melhorias!
+
+---
+
+Obrigado por usar o Dotz Loyalty Program! 🚀

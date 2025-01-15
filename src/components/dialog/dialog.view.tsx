@@ -28,6 +28,13 @@ export function DialogForm(props: DialogFormProps) {
             Adicione um novo endereço
           </Dialog.Description>
           <DialogFormContainer onSubmit={handleSubmit(handleAddAddress)}>
+            <Input
+              label="Nome do endereço"
+              placeholder="Preenche o nome do local"
+
+              {...register('name')}
+
+            />
             <FormRowOne>
               <Input
                 label="CEP"

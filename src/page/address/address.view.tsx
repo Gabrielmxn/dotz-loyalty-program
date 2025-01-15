@@ -7,7 +7,7 @@ import { DialogPage } from "../../components/dialog/dialog.page"
 
 type AddressViewProps = ReturnType<typeof useAddressModel>
 export function AddressView(props: AddressViewProps) {
-  const { addressList } = props
+  const { addressList, mutateDeleteAddress } = props
   console.log(addressList)
   return (
     <AddressContainer>
@@ -21,12 +21,18 @@ export function AddressView(props: AddressViewProps) {
         </DialogPage>
 
       </AddressHeader>
+      {addressList?.length === 0 && <p>Nenhum endereço cadastrado.</p>}
       <AddressList>
         {
           addressList?.map(address => {
             const addressComplet = `${address.street} ${address.number} ${address.complement} ${address.neighborhood}  - ${address.state}  ${address.cep}`
             return (
-              <CardAddress id={address.id} address={addressComplet} />
+              <CardAddress
+                id={address.id}
+                name={address.name}
+                address={addressComplet}
+                onDeleteAddress={mutateDeleteAddress}
+              />
             )
           })
         }

@@ -9,11 +9,15 @@ export const SignUpContainer = styled.main`
 
 
 export const SignUpImg = styled.div`
+display: none;
+@media (min-width: 864px){
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: ${(props) => props.theme.colors["color-dotz-pure"]};
+  }
+ 
 `
 
 export const SignUpContainerForm = styled.div`

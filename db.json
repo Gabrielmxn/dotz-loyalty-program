@@ -1,157 +1,54 @@
 {
   "user": [
-    {
-      "id": "1",
-      "name": "Gabriel",
-      "email": "gabrielmxn22@gmail.com",
-      "password": "123456",
-      "phone": "21973727965",
-      "create_at": "data"
-    },
-    {
-      "id": "01e9",
-      "name": "Gabriel Da Silva Alves",
-      "email": "gb@academia.rog.br",
-      "password": "12345",
-      "phone": "21973727965",
-      "create_at": "Fri Jan 10 2025 23:36:12 GMT-0300 (Hora padrão de Brasília)"
-    },
-    {
-      "id": "2479",
-      "name": "Gabriel Da Silva Alves",
-      "email": "gb@academia.rog.br",
-      "password": "12345",
-      "phone": "21973727965",
-      "create_at": "Fri Jan 10 2025 23:36:26 GMT-0300 (Hora padrão de Brasília)"
-    },
-    {
-      "id": "1094",
-      "name": "Gabriel Da Silva Alves",
-      "email": "gb@academia.rog.br",
-      "password": "dawdwa",
-      "phone": "21973727965",
-      "create_at": "Fri Jan 10 2025 23:40:02 GMT-0300 (Hora padrão de Brasília)"
-    }
+ 
   ],
   "address": [
+  ],
+  "products": [
     {
       "id": "1",
-      "userId": "5",
-      "street": "Example Street",
-      "number": "123",
-      "complement": "Apt 101",
-      "neighborhood": "Downtown",
-      "city": "New York",
-      "state": "NY",
-      "zip_code": "10001",
-      "created_at": "2025-01-10T12:00:00Z"
+      "name": "Panela de Pressão",
+      "value": 21348,
+      "description": "Panela de Pressão Brinox 4,2L Bege Vanilla",
+      "category": "Utilidades Domésticas",
+      "subcategory": "Panelas de pressão",
+      "image": "http://localhost:3000/paneladepressaobrinox.jpg"
     },
     {
-      "id": "e861",
-      "street": "Rua Ibicuí",
-      "number": "130",
-      "complement": "Funbdos",
-      "neighborhood": "Penha Circular",
-      "city": "Rio de Janeiro",
-      "state": "Rio de Janeiro",
-      "cep": "21215240",
-      "userId": "1094"
+      "id": "3",
+      "name": "Relógio",
+      "value": 5899,
+      "description": "Relógio de Brinquedo Fisher-Price Meu Primeiro",
+      "category": "Acessórios",
+      "subcategory": "Relógios",
+      "image": "http://localhost:3000/relogiodebrinquedofisherprice.jpg"
     },
     {
-      "id": "4e44",
-      "created_at": "2025-01-11T19:55:49.262Z",
-      "userId": "1",
-      "cep": "21021270",
-      "state": "Rio de Janeiro",
-      "city": "Rio de Janeiro",
-      "neighborhood": "Olaria",
-      "complement": "Casa",
-      "number": "130",
-      "street": "Rua ibícui"
+      "id": "4",
+      "name": "Aspirador",
+      "value": 28857,
+      "description": "Aspirador de Pó e Água Wap GTW 10 com Porta",
+      "category": "Eletrônicos",
+      "subcategory": "Aspiradores",
+      "image": "http://localhost:3000/aspiradordepoeaguawap.jpg"
     },
     {
-      "id": "bc8a",
-      "created_at": "2025-01-11T19:58:26.352Z",
-      "userId": "1",
-      "cep": "21021270",
-      "state": "Rio de Janeiro",
-      "city": "Rio de Janeiro",
-      "neighborhood": "Olaria",
-      "complement": "awdaw",
-      "number": "13",
-      "street": "1"
+      "id": "5",
+      "name": "Aspirador",
+      "value": 17057,
+      "description": "Aspirador de Pó 2 em 1 Mondial 1100W Turbo Cycle",
+      "category": "Eletrônicos",
+      "subcategory": "Aspiradores",
+      "image": "http://localhost:3000/aspiradordepo2em1mondial.jpg"
     },
     {
-      "id": "bc62",
-      "created_at": "2025-01-11T19:58:26.352Z",
-      "userId": "1",
-      "cep": "21021270",
-      "state": "Rio de Janeiro",
-      "city": "Rio de Janeiro",
-      "neighborhood": "Olaria",
-      "complement": "awdaw",
-      "number": "13",
-      "street": "1"
-    },
-    {
-      "id": "4f0b",
-      "created_at": "2025-01-11T19:58:26.352Z",
-      "userId": "1",
-      "cep": "21021270",
-      "state": "Rio de Janeiro",
-      "city": "Rio de Janeiro",
-      "neighborhood": "Olaria",
-      "complement": "awdaw",
-      "number": "13",
-      "street": "1"
-    },
-    {
-      "id": "57ef",
-      "created_at": "2025-01-11T20:00:09.548Z",
-      "userId": "1",
-      "cep": "21021270",
-      "state": "Rio de Janeiro",
-      "city": "Rio de Janeiro",
-      "neighborhood": "Olaria",
-      "complement": "wadwa",
-      "number": "awdwad",
-      "street": "Rua Bariri"
-    },
-    {
-      "id": "3202",
-      "created_at": "2025-01-11T20:00:09.548Z",
-      "userId": "1",
-      "cep": "21021270",
-      "state": "Rio de Janeiro",
-      "city": "Rio de Janeiro",
-      "neighborhood": "Olaria",
-      "complement": "wadwa",
-      "number": "awdwad",
-      "street": "Rua Bariri"
-    },
-    {
-      "id": "eecc",
-      "created_at": "2025-01-11T20:00:09.548Z",
-      "userId": "1",
-      "cep": "21021270",
-      "state": "Rio de Janeiro",
-      "city": "Rio de Janeiro",
-      "neighborhood": "Olaria",
-      "complement": "wadwa",
-      "number": "awdwad",
-      "street": "Rua Bariri"
-    },
-    {
-      "id": "e84b",
-      "created_at": "2025-01-11T20:19:35.189Z",
-      "userId": "1",
-      "cep": "21215240",
-      "state": "Rio de Janeiro",
-      "city": "Rio de Janeiro",
-      "neighborhood": "Penha Circular",
-      "complement": "",
-      "number": "130",
-      "street": "Rua Ibicuí"
+      "id": "6",
+      "name": "Liquidificador",
+      "value": 35837,
+      "description": "Liquidificador Arno Blendforce Jarra de Vidro Preto 700W",
+      "category": "Eletrônicos",
+      "subcategory": "Liquidificadores",
+      "image": "http://localhost:3000/liquidificadorarno.jpg"
     }
   ]
 }

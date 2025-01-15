@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
-import { DialogForm } from ".";
+
 import { useDialogModel } from "./dialog.model";
+import { DialogForm } from "./dialog.view";
 
 interface DialogPageProps {
   children: ReactNode

@@ -1,14 +1,15 @@
 import { ComponentProps, ReactNode } from "react";
-import { AvatarContainer, AvatarItem } from "./avatar.style";
+import { AvatarContainer, AvatarItem, ImageAvatar } from "./avatar.style";
 
 interface AvatarProps extends ComponentProps<'button'> {
   children?: ReactNode
+  name?: string
 }
-export function Avatar({ children, ...rest }: AvatarProps) {
+export function Avatar({ children, name = 'Dotz', ...rest }: AvatarProps) {
   return (
     <AvatarContainer >
       <AvatarItem {...rest}>
-        <img src={'https://github.com/gabrielmxn.png'} alt="" />
+        {name[0]}
       </AvatarItem>
       {children}
     </AvatarContainer>

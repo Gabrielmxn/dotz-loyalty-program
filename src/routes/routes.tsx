@@ -4,6 +4,7 @@ import { SignInPage } from "../page/signin/signin.page";
 import { HomePage } from "../page/home/home.page";
 import { AddressPage } from "../page/address/address.page";
 import RootLayout from "../page/_layouts/RootLayout";
+import { CartPage } from "../page/cart/cart.page";
 
 export function RoutesProvider() {
   return (
@@ -12,6 +13,7 @@ export function RoutesProvider() {
         <Route path='/' element={<RootLayout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/address" element={<AddressPage />} />
+          <Route path="/cart" element={<CartPage />} />
           <Route path="*" element={<>Error - Pagina não encontrada <Link to={'/'}>Voltar</Link></>} />
         </Route>
 

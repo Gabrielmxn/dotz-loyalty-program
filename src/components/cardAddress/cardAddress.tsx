@@ -1,27 +1,33 @@
 import { Pencil, Trash } from "@phosphor-icons/react";
 import { AddressDescription, CardAddressContainer, CardAddressHeader, Heading } from "./cardAddress.styles";
 import { colors } from "../../theme/colors";
-import { api } from "../../lib/axios";
+
+interface OnDeleteAddressProps {
+  id: string
+}
 interface CardAddressProps {
   id: string
   address: string
+  name: string
+  onDeleteAddress: ({ id }: OnDeleteAddressProps) => void
 }
+
+
 export function CardAddress({
   id,
-  address
+  address,
+  onDeleteAddress,
+  name
 }: CardAddressProps) {
-  async function handleDeleteAddress(id: string) {
-    const response = await api.delete(`address/${id}`)
 
-    return response.data;
-  }
   return (
     <CardAddressContainer>
       <CardAddressHeader>
-        <Heading>Residencial</Heading>
+        <Heading>{name}</Heading>
         <div>
-          <Pencil size={16} fill={colors["color-dotz-dark"]} />
-          <Trash size={16} fill={colors["color-dotz-dark"]} onClick={() => handleDeleteAddress(id)} />
+          <Trash style={{ cursor: 'pointer' }} size={16} fill={colors["color-dotz-dark"]} onClick={() => onDeleteAddress({
+            id
+          })} />
         </div>
 
       </CardAddressHeader>

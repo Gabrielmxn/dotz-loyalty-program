@@ -5,6 +5,10 @@ import { api } from "../../lib/axios"
 import { toast } from "sonner"
 import { ChangeEvent } from "react"
 import { viaCep } from "../../services/viacep"
+import { useMutation } from "@tanstack/react-query"
+import { createAddress } from "../../infra/http/address/add"
+import { queryClient } from "../../lib/react-query"
+import { Address } from "../../DTOs/address"
 
 export function useDialogModel(){
   const { register, handleSubmit, setValue, reset, formState: {
@@ -27,24 +31,45 @@ export function useDialogModel(){
   }
 
 
-
-  async function handleAddAddress(data: AddressSchemaType){
-    try {
-      await api.post(`address`, {
-        ...data,
-      })
+  const { mutate: mutateCreateAddress} = useMutation({
+    mutationFn: (data: AddressSchemaType) => createAddress({
+      ...data
+    }),
+    onSuccess(data, variables, context) {
+      toast.success("Endereço excluído com sucesso.")
+      const queryKey = ['address', localStorage.getItem("userId")]
+      const cached = queryClient.getQueryData<Address[]>(queryKey)
       
-      toast.success("Endereço salvo com sucesso!", {
-        className: 'sonner'
-      })
-
+      const newAddress = {
+        ...variables,
+        id: data.id
+      }
       reset()
-    }catch(err){
-      toast.error(err.message)
-      console.log(err)
-    }
+      if(cached !== undefined){
+        queryClient.setQueryData(queryKey, [...cached,  newAddress])
+        return
+      }
+
+      queryClient.setQueryData(queryKey, [newAddress])
+      
+      
+    },
+    onError(error: AxiosError, __, ___) {
+      if (error.status === 404) {
+        toast.error("Endereço não foi encontrado.")
+        return
+      }
+
+      toast.error("Error no servidor. Tente novamente mais tarde.")
+    },
+  })  
+
+  function handleAddAddress(data: AddressSchemaType){
+      mutateCreateAddress({
+        ...data
+      })
   }
   return{
-    register, handleSubmit, setValue, reset, handleAddAddress, errors, handleViaCep
+    register, handleSubmit, setValue, reset, handleAddAddress, errors, handleViaCep, mutateCreateAddress
   }
 }

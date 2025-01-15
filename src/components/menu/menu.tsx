@@ -1,16 +1,15 @@
 import { Link } from "react-router";
 import { MenuContainer, MenuList, MenuListItem, SignOut } from "./menu.styles";
+import { AuthContext } from "../context/AuthProvider";
+import { useContext } from "react";
 
 export function Menu() {
-  function handleLogout() {
-    window.location.href = '/login'
-  }
+  const { logout } = useContext(AuthContext)
+
+
   return (
     <MenuContainer>
       <MenuList>
-        <MenuListItem>
-          Profile
-        </MenuListItem>
         <MenuListItem>
           <Link to={'/address'}>
             Endereços
@@ -19,7 +18,7 @@ export function Menu() {
         <MenuListItem>
           Meu extrato
         </MenuListItem>
-        <SignOut onClick={handleLogout}>
+        <SignOut onClick={logout}>
           Sair
         </SignOut>
       </MenuList>

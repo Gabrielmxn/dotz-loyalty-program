@@ -14,7 +14,7 @@ export function SignInView(props: SignInViewProps) {
         <h2>Sign In</h2>
         <SignUpForm onSubmit={handleSubmit(handleAuthenticateUser)}>
           <Input {...register('email')} label="E-mail" placeholder="Digite seu e-mail" />
-          <Input {...register('password')} label="Senha" placeholder="Digite sua senha" />
+          <Input {...register('password')} type="password" label="Senha" placeholder="Digite sua senha" />
           <Button
             type="submit"
             disabled={isSubmitting}

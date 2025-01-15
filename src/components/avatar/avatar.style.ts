@@ -23,11 +23,13 @@ export const AvatarItem = styled.button`
     cursor: pointer;
     object-fit: cover;
     border-radius: 9999px;
+    color: #fff;
+    background-color: ${props => props.theme.colors["color-dotz-dark"]};
+`
 
-    img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 9999px;
-  }
+export const ImageAvatar = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 9999px;
 `

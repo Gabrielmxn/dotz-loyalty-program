@@ -12,4 +12,6 @@ export const NavigateButton = styled(Link)`
 
 
   }
+
+  
 `

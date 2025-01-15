@@ -1,6 +1,7 @@
 import { date, InferType, object, string } from "yup";
 
 export const AddressSchema = object({
+  name: string().required(),
   street: string().required(),
   number: string().required(),
   complement: string().optional(),
